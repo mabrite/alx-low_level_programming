@@ -1,23 +1,13 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
+#include "main.h"
 
-/**
- * main - Entry  point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
+void positive_or_negative(int i)
 {
-        int n;
 
-        srand(time(0));
-        n = rand() - RAND_MAX / 2;
-        if (n > 0)
-                printf("%d is positive\n", n);
-        else if (n < 0)
-                printf("%d is negative\n", n);
+
+        if (i > 0)
+                printf("%d is positive\n", i);
+        else if (i < 0)
+                printf("%d is negative\n", i);
         else
-                printf("0 is zero\n");
-        return (0);
+                printf("0 is zero\n", i);
 }
