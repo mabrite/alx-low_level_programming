@@ -1,22 +1,20 @@
-#include <stdio.h>
+#include "main.h"
 
-void _puts_recursion(char *s) {
-    if (*s == '\0'); 
-    {
-        /* Base case: end of the string, print new line
-        putchar('\n');
-        return;
-    }
+/**
+ * _puts_recursion -Print a string followed by a new line
+ * @s: the string to print
+ *
+ * Return: Nothing.
+ */
+void _puts_recursion(char *s)
+{
+        if (*s == '\0')
+        {
+               _putchar('\n');
+                return;
+        }
 
-    * Print the current character
-    putchar(*s);
-
-    * Recursive call with the next character
-    _puts_recursion(s + 1);
-}
-
-int main() {
-    char str[] = "Hello, World!";
-    _puts_recursion(str);
-    return 0;
+        _putchar(*s);
+        s++;
+        _puts_recursion(s);
 }
