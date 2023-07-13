@@ -3,11 +3,13 @@
 #include <stdio.h>
 
 /**
- * argstastr - convert the params passed to the program to string
+ * argstostr - convert the params passed to the program to string
  * @ac: the argument count
  * @av: the argument vector
  *
- * Return: ...
+ * Return: Pointer to a newly allocated string
+ * containing the concatenated arguments,
+ * or NULL if memory allocation fails or no arguments are provided.
  */
 char *argstostr(int ac, char **av)
 {
