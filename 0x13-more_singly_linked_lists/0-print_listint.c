@@ -1,3 +1,8 @@
+/*
+ * File: 0-print_list.c
+ * Author: Zigah mabel
+ */
+
 #include "lists.h"
 #include <stdio.h>
 
